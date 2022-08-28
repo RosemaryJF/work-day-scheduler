@@ -25,6 +25,9 @@ textarea {
   white-space: pre-wrap;
 }
 
+.local-storage-save {
+  display: none;
+}
 .time-block {
   text-align: center;
   border-radius: 15px;

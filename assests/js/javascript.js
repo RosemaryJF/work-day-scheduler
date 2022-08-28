@@ -2,24 +2,27 @@
 var currentDayDisplay = moment().format("LLLL");
 $("#current-day").text(currentDayDisplay);
 
-// Creation of click function on save button and appending of text input to local storage
+// Creation of click function on save button and appending of textarea input to local storage
 
-//   $( ".saveBtn" ).click(function() {
-//     console.log("clicked!")
-//     var text = document.getElementsByTagName("textarea").name
-//      console.log(text.value);   
-// })
 $(document).ready(function(){
     
     $(".saveBtn").on("click", function () {
-    console.log("clicked!");
-   
+    
+        // showStorageSave(function() {
+        //     $(".local-storage-save").show("fast")
+        //     }, 5000);
+
     var plannerEntry = $(this).siblings(".planner-entry").val();
     plannerEntry = $.trim(plannerEntry);
     console.log(plannerEntry);
 
-    })
+    localStorage.setItem("planner-entry", JSON.stringify(plannerEntry));
+
+ })
+
 })
+
+
 
 
 
@@ -55,18 +58,10 @@ function currentTimeTracker() {
 
         }
     })
+
+    // Returns planner entries from local storage if page is reloaded.
+    $("#hour9 .planner-entry").val(localStorage.getItem('planner-entry'));
+
 }
 currentTimeTracker()
 
-// var plannerEntry = document.getElementsByClassName("planner-entry").value;
-// console.log(plannerEntry)
-
-// var saveBtn = document.getElementsByClassName("saveBtn")
-// function saveBtnClicked(){
-//     console.log("clicked!")
-//      var text = document.getElementsByTagName("textArea").value
-//      console.log(text);   
-//      saveBtn.addEventListener("click", saveBtnClicked())
-// }
-
-// Function local storage save
