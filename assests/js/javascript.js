@@ -1,5 +1,27 @@
+// Retrieves current day/time and applies as text in header
 var currentDayDisplay = moment().format("LLLL");
 $("#current-day").text(currentDayDisplay);
+
+// Creation of click function on save button and appending of text input to local storage
+
+//   $( ".saveBtn" ).click(function() {
+//     console.log("clicked!")
+//     var text = document.getElementsByTagName("textarea").name
+//      console.log(text.value);   
+// })
+$(document).ready(function(){
+    
+    $(".saveBtn").on("click", function () {
+    console.log("clicked!");
+   
+    var plannerEntry = $(this).siblings(".planner-entry").val();
+    console.log(plannerEntry);
+
+    })
+})
+
+
+
 
 // Function to add/remove classes for color coded time blocks
 function currentTimeTracker() {
@@ -35,6 +57,15 @@ function currentTimeTracker() {
 }
 currentTimeTracker()
 
+// var plannerEntry = document.getElementsByClassName("planner-entry").value;
+// console.log(plannerEntry)
 
+// var saveBtn = document.getElementsByClassName("saveBtn")
+// function saveBtnClicked(){
+//     console.log("clicked!")
+//      var text = document.getElementsByTagName("textArea").value
+//      console.log(text);   
+//      saveBtn.addEventListener("click", saveBtnClicked())
+// }
 
 // Function local storage save

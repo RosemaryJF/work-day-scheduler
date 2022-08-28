@@ -4,19 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
@@ -24,6 +26,7 @@
     <link rel="stylesheet" href="./assests/css/style.css" />
 
     <title>Work Day Scheduler</title>
+    <link rel="icon" type="image/x-icon" href="./assests/images/favicon.jpg"/>
   </head>
 
   <body>
@@ -40,11 +43,10 @@
         <div class="col col-lg-1 hour">
           9AM
         </div>
-        <div class="col-md-10 en">
-            
-        </div>
+          <textarea class="col-md-10 en planner-entry">
+          </textarea>
         <div class="col col-lg-1 saveBtn">
-          <!-- SAVE ICON TO BE ADDED IN JS -->
+          <span class="ui-icon ui-icon-disk"></span>
         </div>
       </div>
 
@@ -52,9 +54,8 @@
         <div class="col col-lg-1 hour">
           10AM
         </div>
-        <div class="col-md-10">
-            
-        </div>
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
         <div class="col col-lg-1 saveBtn">
           
         </div>
@@ -64,9 +65,8 @@
         <div class="col col-lg-1 hour">
           11AM
         </div>
-        <div class="col-md-10">
-          
-        </div>
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
         <div class="col col-lg-1 saveBtn">
           
         </div>
@@ -76,9 +76,8 @@
         <div class="col col-lg-1 hour">
           12PM
         </div>
-        <div class="col-md-10">
-          
-        </div>
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
         <div class="col col-lg-1 saveBtn">
           <!-- SAVE ICON TO BE ADDED IN JS -->
         </div>
@@ -88,9 +87,8 @@
         <div class="col col-lg-1 hour">
           1PM
        </div>
-        <div class="col-md-10">
-          
-      </div>
+       <textarea class="col-md-10 en planner-entry">
+        </textarea>
         <div class="col col-lg-1 saveBtn">
           <!-- SAVE ICON TO BE ADDED IN JS -->
         </div>
@@ -100,9 +98,8 @@
           <div class="col col-lg-1 hour">
             2PM
           </div>
-          <div class="col-md-10">
-            
-          </div>
+          <textarea class="col-md-10 en planner-entry">
+          </textarea>
           <div class="col col-lg-1 saveBtn">
             <!-- SAVE ICON TO BE ADDED IN JS -->
           </div>
@@ -112,9 +109,8 @@
           <div class="col col-lg-1 hour">
             3PM
           </div>
-          <div class="col-md-10">
-            
-          </div>
+          <textarea class="col-md-10 en planner-entry">
+          </textarea>
           <div class="col col-lg-1 saveBtn">
             <!-- SAVE ICON TO BE ADDED IN JS -->
           </div>
@@ -124,9 +120,8 @@
           <div class="col col-lg-1 hour">
             4PM
           </div>
-          <div class="col-md-10">
-            
-          </div>
+          <textarea class="col-md-10 en planner-entry">
+          </textarea>
           <div class="col col-lg-1 saveBtn">
             <!-- SAVE ICON TO BE ADDED IN JS -->
           </div>
@@ -136,17 +131,18 @@
           <div class="col col-lg-1 hour">
             5PM
           </div>
-          <div class="col-md-10 time-block">
-            
-          </div>
+          <textarea class="col-md-10 en planner-entry">
+          </textarea>
           <div class="col col-lg-1 saveBtn">
             <!-- SAVE ICON TO BE ADDED IN JS -->
           </div>
         </div>
+      </br>
       </div>
     </div>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
     <script src="./assests/js/javascript.js"></script>
