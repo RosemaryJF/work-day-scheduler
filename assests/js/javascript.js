@@ -15,6 +15,7 @@ $(document).ready(function(){
     console.log("clicked!");
    
     var plannerEntry = $(this).siblings(".planner-entry").val();
+    plannerEntry = $.trim(plannerEntry);
     console.log(plannerEntry);
 
     })
