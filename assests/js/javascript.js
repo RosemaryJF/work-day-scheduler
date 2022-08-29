@@ -11,12 +11,15 @@ $(document).ready(function(){
         // showStorageSave(function() {
         //     $(".local-storage-save").show("fast")
         //     }, 5000);
-
+   
     var plannerEntry = $(this).siblings(".planner-entry").val();
+    var entryTime = $(this).parent().attr("id");
     plannerEntry = $.trim(plannerEntry);
+    console.log(entryTime);
     console.log(plannerEntry);
+    
 
-    localStorage.setItem("planner-entry", JSON.stringify(plannerEntry));
+    localStorage.setItem(entryTime, plannerEntry);
 
  })
 
@@ -38,30 +41,37 @@ function currentTimeTracker() {
 
         //If statement to set classes if time blocks are less than the current hour
         if (timeBlock < currentTime) {
-            $(this).removeClass("future");
-            $(this).removeClass("present");
             $(this).addClass("past");
+            $(this).removeClass("present");
+            $(this).removeClass("future");
         }
 
-        // Else is statement to set classes if time blocks match the current hour
+        // Else if statement to set classes if time blocks match the current hour
         else if (timeBlock === currentTime) {
             $(this).removeClass("past");
-            $(this).removeClass("future");
             $(this).addClass("present");
+            $(this).removeClass("future");
         }
 
         //Else statement to set classes if time blocks are more than current hour
         else {
-            $(this).removeClass("present");
             $(this).removeClass("past");
+            $(this).removeClass("present");
             $(this).addClass("future");
-
         }
     })
 
     // Returns planner entries from local storage if page is reloaded.
-    $("#hour9 .planner-entry").val(localStorage.getItem('planner-entry'));
 
+    $("#hour9 .planner-entry").val(localStorage.getItem("hour9"));
+    $("#hour10 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour11 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour12 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour13 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour14 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour15 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour16 .planner-entry").val(localStorage.getItem('planner-entry'));
+    $("#hour17 .planner-entry").val(localStorage.getItem("planner-entry"));
 }
 currentTimeTracker()
 
