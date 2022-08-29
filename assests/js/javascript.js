@@ -17,18 +17,10 @@ $(document).ready(function(){
     plannerEntry = $.trim(plannerEntry);
     console.log(entryTime);
     console.log(plannerEntry);
-    
 
     localStorage.setItem(entryTime, plannerEntry);
-
- })
-
-})
-
-
-
-
-
+    })
+});
 
 // Function to add/remove classes for color coded time blocks
 function currentTimeTracker() {
@@ -64,14 +56,14 @@ function currentTimeTracker() {
     // Returns planner entries from local storage if page is reloaded.
 
     $("#hour9 .planner-entry").val(localStorage.getItem("hour9"));
-    $("#hour10 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour11 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour12 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour13 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour14 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour15 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour16 .planner-entry").val(localStorage.getItem('planner-entry'));
-    $("#hour17 .planner-entry").val(localStorage.getItem("planner-entry"));
+    $("#hour10 .planner-entry").val(localStorage.getItem("hour10"));
+    $("#hour11 .planner-entry").val(localStorage.getItem("hour11"));
+    $("#hour12 .planner-entry").val(localStorage.getItem("hour12"));
+    $("#hour13 .planner-entry").val(localStorage.getItem("hour13"));
+    $("#hour14 .planner-entry").val(localStorage.getItem("hour14"));
+    $("#hour15 .planner-entry").val(localStorage.getItem("hour15"));
+    $("#hour16 .planner-entry").val(localStorage.getItem("hour16"));
+    $("#hour17 .planner-entry").val(localStorage.getItem("hour17"));
 }
 currentTimeTracker()
 
