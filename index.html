@@ -30,115 +30,147 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Element containing cureent day / time -->
       <p id="current-day" class="lead"></p>
     </header>
 
+    <!-- Beginning of scheduler -->
     <div class="container">
       <div class="local-storage-save">Appointment added to LocalStorage!</div>
-      <!-- Timeblocks go here -->
+
+      <!-- 9am Timeblock - note all time blocks follow the same structure as the first-->
       <div id=hour9 class="row justify-content-md-center row time-block">
+        <!-- Hour column -->
         <div class="col col-lg-1 hour">
           9AM
         </div>
-          <textarea class="col-md-10 en planner-entry">
-          </textarea>
+
+        <!-- Planner entry test area -->
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
+
+        <!--Save button element and icon  -->
         <div class="col col-lg-1 saveBtn">
           <i class="far fa-save"></i>
         </div>
       </div>
 
+      <!-- 10am Timeblock -->
       <div id=hour10 class="row justify-content-md-center row time-block">
         <div class="col col-lg-1 hour">
           10AM
         </div>
+
         <textarea class="col-md-10 en planner-entry">
         </textarea>
+
         <div class="col col-lg-1 saveBtn">
           <i class="far fa-save"></i>
         </div>
       </div>
 
+      <!-- 11am Timeblock -->
       <div id=hour11 class="row justify-content-md-center row  time-block">
         <div class="col col-lg-1 hour">
           11AM
         </div>
+
         <textarea class="col-md-10 en planner-entry">
         </textarea>
+
         <div class="col col-lg-1 saveBtn">
           <i class="far fa-save"></i>
         </div>
       </div>
 
+      <!-- 12pm Timeblock -->
       <div id=hour12 class="row justify-content-md-center row time-block">
         <div class="col col-lg-1 hour">
           12PM
         </div>
+
         <textarea class="col-md-10 en planner-entry">
         </textarea>
+
         <div class="col col-lg-1 saveBtn">
           <i class="far fa-save"></i>
         </div>
       </div>
 
+      <!-- 1pm Timeblock -->
       <div id=hour13 class="row justify-content-md-center row time-block">
         <div class="col col-lg-1 hour">
           1PM
-       </div>
-       <textarea class="col-md-10 en planner-entry">
+        </div>
+
+        <textarea class="col-md-10 en planner-entry">
         </textarea>
+
         <div class="col col-lg-1 saveBtn">
           <i class="far fa-save"></i>
         </div>
       </div>
 
-        <div id=hour14 class="row justify-content-md-center row time-block">
-          <div class="col col-lg-1 hour">
-            2PM
-          </div>
-          <textarea class="col-md-10 en planner-entry">
-          </textarea>
-          <div class="col col-lg-1 saveBtn">
-            <i class="far fa-save"></i>
-          </div>
+      <!-- 2pm Timeblock -->
+      <div id=hour14 class="row justify-content-md-center row time-block">
+        <div class="col col-lg-1 hour">
+          2PM
         </div>
 
-        <div id=hour15 class="row justify-content-md-center row time-block">
-          <div class="col col-lg-1 hour">
-            3PM
-          </div>
-          <textarea class="col-md-10 en planner-entry">
-          </textarea>
-          <div class="col col-lg-1 saveBtn">
-            <i class="far fa-save"></i>
-          </div>
-        </div>
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
 
-        <div id=hour16 class="row justify-content-md-center row  time-block">
-          <div class="col col-lg-1 hour">
-            4PM
-          </div>
-          <textarea class="col-md-10 en planner-entry">
-          </textarea>
-          <div class="col col-lg-1 saveBtn">
-            <i class="far fa-save"></i>
-          </div>
+        <div class="col col-lg-1 saveBtn">
+          <i class="far fa-save"></i>
         </div>
-
-        <div id=hour17 class="row justify-content-md-center row time-block">
-          <div class="col col-lg-1 hour">
-            5PM
-          </div>
-          <textarea class="col-md-10 en planner-entry">
-          </textarea>
-          <div class="col col-lg-1 saveBtn">
-            <i class="far fa-save"></i>
-          </div>
-        </div>
-      </br>
       </div>
+
+      <!-- 3pm Timeblock -->
+      <div id=hour15 class="row justify-content-md-center row time-block">
+        <div class="col col-lg-1 hour">
+          3PM
+        </div>
+
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
+
+        <div class="col col-lg-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+
+      <!-- 4pm Timeblock -->
+      <div id=hour16 class="row justify-content-md-center row  time-block">
+        <div class="col col-lg-1 hour">
+          4PM
+        </div>
+
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
+
+        <div class="col col-lg-1 saveBtn">
+          <i class="far fa-save"></i>
+        </div>
+      </div>
+
+      <!-- 5pm Timeblock -->
+      <div id=hour17 class="row justify-content-md-center row time-block">
+        <div class="col col-lg-1 hour">
+          5PM
+        </div>
+
+        <textarea class="col-md-10 en planner-entry">
+        </textarea>
+
+        <div class="col col-lg-1 saveBtn">
+           <i class="far fa-save"></i>
+        </div>
+      </div>
+      </br>
     </div>
         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

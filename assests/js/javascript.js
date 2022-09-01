@@ -3,7 +3,6 @@ var currentDayDisplay = moment().format("LLLL");
 $("#current-day").text(currentDayDisplay);
 
 // Creation of click function on save button and appending of textarea input to local storage
-
 $(document).ready(function(){
     
     $(".saveBtn").on("click", function () {
@@ -31,7 +30,7 @@ function currentTimeTracker() {
     $(".time-block").each(function () {
         var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
 
-        //If statement to set classes if time blocks are less than the current hour
+        // If statement to set classes if time blocks are less than the current hour
         if (timeBlock < currentTime) {
             $(this).addClass("past");
             $(this).removeClass("present");
@@ -54,7 +53,7 @@ function currentTimeTracker() {
     })
 
     // Returns planner entries from local storage if page is reloaded.
-
+    // I chose this way so that if the entry was changed the local storage would be updated upon save and reload.
     $("#hour9 .planner-entry").val(localStorage.getItem("hour9"));
     $("#hour10 .planner-entry").val(localStorage.getItem("hour10"));
     $("#hour11 .planner-entry").val(localStorage.getItem("hour11"));
