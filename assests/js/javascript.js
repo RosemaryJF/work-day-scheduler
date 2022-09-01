@@ -5,19 +5,15 @@ $("#current-day").text(currentDayDisplay);
 // Creation of click function on save button and appending of textarea input to local storage
 $(document).ready(function(){
     
-    $(".saveBtn").on("click", function () {
-    
-        // showStorageSave(function() {
-        //     $(".local-storage-save").show("fast")
-        //     }, 5000);
-   
-    var plannerEntry = $(this).siblings(".planner-entry").val();
-    var entryTime = $(this).parent().attr("id");
-    plannerEntry = $.trim(plannerEntry);
-    console.log(entryTime);
-    console.log(plannerEntry);
+    $(".saveBtn").on("click", function () { 
+        var plannerEntry = $(this).siblings(".planner-entry").val();
+        var entryTime = $(this).parent().attr("id");
+            
+        plannerEntry = $.trim(plannerEntry);
+        console.log(entryTime);
+        console.log(plannerEntry);
 
-    localStorage.setItem(entryTime, plannerEntry);
+        localStorage.setItem(entryTime, plannerEntry);
     })
 });
 
@@ -30,27 +26,27 @@ function currentTimeTracker() {
     $(".time-block").each(function () {
         var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
 
-        // If statement to set classes if time blocks are less than the current hour
-        if (timeBlock < currentTime) {
-            $(this).addClass("past");
-            $(this).removeClass("present");
-            $(this).removeClass("future");
-        }
+            // If statement to set classes if time blocks are less than the current hour
+            if (timeBlock < currentTime) {
+                $(this).addClass("past");
+                $(this).removeClass("present");
+                $(this).removeClass("future");
+            }
 
-        // Else if statement to set classes if time blocks match the current hour
-        else if (timeBlock === currentTime) {
-            $(this).removeClass("past");
-            $(this).addClass("present");
-            $(this).removeClass("future");
-        }
+            // Else if statement to set classes if time blocks match the current hour
+            else if (timeBlock === currentTime) {
+                $(this).removeClass("past");
+                $(this).addClass("present");
+                $(this).removeClass("future");
+            }
 
-        //Else statement to set classes if time blocks are more than current hour
-        else {
-            $(this).removeClass("past");
-            $(this).removeClass("present");
-            $(this).addClass("future");
-        }
-    })
+            //Else statement to set classes if time blocks are more than current hour
+            else {
+                $(this).removeClass("past");
+                $(this).removeClass("present");
+                $(this).addClass("future");
+            }
+    });
 
     // Returns planner entries from local storage if page is reloaded.
     // I chose this way so that if the entry was changed the local storage would be updated upon save and reload.
@@ -65,4 +61,3 @@ function currentTimeTracker() {
     $("#hour17 .planner-entry").val(localStorage.getItem("hour17"));
 }
 currentTimeTracker()
-

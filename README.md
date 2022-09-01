@@ -45,7 +45,7 @@ Note that past time blocks are grey, current time blocks are red, and green time
 
 You can view the deployed application through the link below!
 
-
+https://rosemaryjf.github.io/work-day-scheduler/
 
 ---
 
@@ -53,18 +53,18 @@ You can view the deployed application through the link below!
 
 Below I have listed the resources I used to help me acquire the knowledge for how best to implement the scheduler functionality. I really tried to stick to JQuery this challenge and found that deciding this and using the documentation as much as possible was a great help.
 
-* [https://api.jquery.com/removeclass/](https://api.jquery.com/removeclass/)
-* [https://api.jquery.com/addclass/](https://api.jquery.com/addclass/)
-* [https://api.jquery.com/each/](https://api.jquery.com/each/)
-* [https://api.jquery.com/click/](https://api.jquery.com/click/)
-* [https://api.jquery.com/category/traversing/](https://api.jquery.com/category/traversing/)
-* [https://api.jquery.com/siblings/](https://api.jquery.com/siblings/)
-* [https://api.jquery.com/parent/](https://api.jquery.com/parent/)
-* [https://api.jquery.com/jquery.trim/](https://api.jquery.com/jquery.trim/)
-* [https://api.jquery.com/data/](https://api.jquery.com/data/)
-* [https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-* [https://api.jquery.com/show/](https://api.jquery.com/show/)
-* [https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery](https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery)
+* https://api.jquery.com/removeclass/
+* https://api.jquery.com/addclass/
+* https://api.jquery.com/each/
+* https://api.jquery.com/click/
+* https://api.jquery.com/category/traversing/
+* https://api.jquery.com/siblings/
+* https://api.jquery.com/parent/
+* https://api.jquery.com/jquery.trim/
+* https://api.jquery.com/data/
+* https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+* https://api.jquery.com/show/
+* https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery
 
 ---
 
