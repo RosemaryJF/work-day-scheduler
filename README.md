@@ -4,80 +4,69 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+I developed a work day schedular so that a user could easily track their daily plans as it progressed. I wanted it clearly to highlight for the user what day and time it was, and that then to be reflected in the planner back at them with changing colours to represent the past, present and future. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
-
-## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
-## License
-
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+Doing this allowed me to practise bootstrap, moment.js, adding and removing elements via juqery and appending data to local storage which would persist upon page refresh.
 
 ---
 
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+## Table of Contents
 
-## Badges
+- [Installation](#installation)
+- [Usage](#usage)
+- [Resources](#resources)
+- [License](#license)
+- [Features](#features)
+- [Resources](#credits)
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+---
 
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+## Installation
 
-## Features
+You are required to have a code editor such as VS Code if you want to clone/pull the repo. 
 
-If your project has a lot of features, list them here.
+Aside from this the application should work on most browsers.
 
-## How to Contribute
+---
 
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
+## Usage
 
-## Tests
+To use the daily planner open the application. Note that the jumbotron will display the current day, date and time. 
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+![Screenshot of Jumbotron](./assests/images/Jumbotron.jpg)
 
-https://api.jquery.com/removeclass/
-https://api.jquery.com/addclass/
-https://api.jquery.com/each/
-https://api.jquery.com/click/
-https://api.jquery.com/category/traversing/
-https://api.jquery.com/siblings/
-https://api.jquery.com/parent/
-https://api.jquery.com/jquery.trim/
-https://api.jquery.com/data/
-https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-https://api.jquery.com/show/
+The first column depicts the different time blocks. Front end uses 24hr time while the code will communicate in 24hr for necessary functionality. The last column depicts the save button for each row, with small save icon in white to display this.
 
-https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery
+Where needed click into the timeblock text area to enter your planner entries, click save, refresh and the data will persist. You can even close the page and it should persist if you reopen it. 
+
+Note that past time blocks are grey, current time blocks are red, and green time blocks are the future.
+
+![Example of Planner filled in with highlights to sections](./assests/images/example-image.jpg)
+
+You can view the deployed application through the link below!
+
+
+
+---
+
+## Resources
+
+Below I have listed the resources I used to help me acquire the knowledge for how best to implement the scheduler functionality. I really tried to stick to JQuery this challenge and found that deciding this and using the documentation as much as possible was a great help.
+
+* [https://api.jquery.com/removeclass/](https://api.jquery.com/removeclass/)
+* [https://api.jquery.com/addclass/](https://api.jquery.com/addclass/)
+* [https://api.jquery.com/each/](https://api.jquery.com/each/)
+* [https://api.jquery.com/click/](https://api.jquery.com/click/)
+* [https://api.jquery.com/category/traversing/](https://api.jquery.com/category/traversing/)
+* [https://api.jquery.com/siblings/](https://api.jquery.com/siblings/)
+* [https://api.jquery.com/parent/](https://api.jquery.com/parent/)
+* [https://api.jquery.com/jquery.trim/](https://api.jquery.com/jquery.trim/)
+* [https://api.jquery.com/data/](https://api.jquery.com/data/)
+* [https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+* [https://api.jquery.com/show/](https://api.jquery.com/show/)
+* [https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery](https://stackoverflow.com/questions/10507294/how-to-get-the-value-of-a-textarea-in-jquery)
+
+---
+
+
+
